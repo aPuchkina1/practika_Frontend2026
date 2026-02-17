@@ -2,3 +2,44 @@ h1, h2, h3, h4, h5, h6, ul {
     margin: 0;
     padding: 0;
 }
+
+:root {
+  --c-black: #1B1B1D;
+  --c-gray: #64646A;
+  --c-bg: #EEEFF1;
+  --c-light: #F3F4F5;
+  --c-white: #FFFFFF;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Jost", sans-serif;
+  color: var(--c-black);
+  background: var(--c-bg);
+}
+
+img { display: block; max-width: 100%; height: auto; }
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  width: calc(100% - 80px);
+}
+
+.section-title {
+  margin: 0 0 14px;
+  font-size: 48px;
+  line-height: 1.1;
+  text-align: center;
+  font-weight: 800;
+}
+
+.section-subtitle {
+  margin: 0 auto 44px;
+  max-width: 560px;
+  text-align: center;
+  color: var(--c-gray);
+  line-height: 1.6;
+}

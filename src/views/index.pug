@@ -2,12 +2,148 @@ extends layouts/default
 include helpers/mixins
 
 block variables
-	- const title = "gulp-pug-starter"
+  - const title = "Alowishus Coffee"
 
 block content
-	include ../blocks/modules/header/header
-	include ../blocks/modules/footer/footer
+  header.header
+    .container.header__container
+      a.header__logo(href="#")
+        img(src="img/svg/logo.svg" alt="Alowishus")
 
-block scripts
-	script(src="js/vendor.js")
-	script(src="js/main.js")
+      nav.header__nav(aria-label="Main navigation")
+        ul.header__menu
+          li: a.header__link(href="#") Cafe Menu
+          li: a.header__link(href="#") About Us
+          li: a.header__link(href="#") Find Us
+          li: a.header__link(href="#") Alowishus Catering
+
+      .header__actions
+        button.header__circle(type="button" aria-label="Cart")
+          img(src="img/svg/bxs-basket 1.svg" alt="")
+        a.btn.btn--dark(href="#") BUY GIFT VOUCHERS
+
+  main
+    section.hero
+      .container.hero__container
+        .hero__content
+          h1.hero__title
+            | Alowishus
+            br
+            | Delicious
+            br
+            | Coffee
+          p.hero__text
+            | A drink from the ‘My Alowishus’ bottled brews range OR grab one of our delicious coffee’s.
+          .hero__buttons
+            a.btn.btn--dark(href="#") DOWNLOAD APP
+            a.btn.btn--link(href="#") SHOP COFFEE
+
+        .hero__media
+          img.hero__art(src="img/hero-cup.png" alt="Coffee cup")
+
+    section.explore
+      .container
+        h2.section-title Explore Our Alowishus
+        p.section-subtitle
+          | A drink from the ‘My Alowishus’ bottled brews range OR grab one of our delicious coffee’s.
+        .explore__grid
+          article.card
+            h3.card__title Our Catering
+            p.card__text Alowishus Catering, delicious drop off Catering
+            img.card__icon(src="img/svg/fast-food.svg" alt="")
+            a.btn.btn--dark.btn--sm(href="#") ORDER CATHERING
+
+          article.card
+            h3.card__title The Food
+            p.card__text Our entire menu is available as dine in or takeaway.
+            img.card__icon(src="img/svg/food.svg" alt="")
+            a.btn.btn--dark.btn--sm(href="#") FOOD MENU
+
+          article.card
+            h3.card__title The Gelato
+            p.card__text Life is like GELATO, enjoy it before it melts.
+            img.card__icon(src="img/svg/ice-cream.svg" alt="")
+            a.btn.btn--dark.btn--sm(href="#") DISCOVER MORE
+
+    section.order
+      .container.order__container
+        .order__media
+          img(src="img/order-cups.png" alt="Coffee cups")
+        .order__content
+          h2.order__title Order Your Favourite Coffee
+          p.order__text
+            | Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+            | Velit officia consequat duis enim velit mollit.
+            | Exercitation veniam consequat sunt nostrud amet.
+          a.btn.btn--dark(href="#") ORDER NOW
+
+    section.testimonials
+      .container
+        h2.section-title What Our Customers Say
+        .testimonials__rate
+          span.testimonials__value 4.9
+          span.testimonials__stars ★★★★★
+          span.testimonials__meta based on 2452+ reviews
+
+        .testimonials__grid
+          article.review
+            img.review__photo(src="img/review-1.png" alt="Customer photo")
+            .review__body
+              .review__head
+                h3.review__name Brooklyn Simmons
+                span.review__stars ★★★★★
+              p.review__text
+                | “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                | Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                | Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                | Velit officia”
+
+          article.review
+            img.review__photo(src="img/review-2.png" alt="Customer photo")
+            .review__body
+              .review__head
+                h3.review__name Imun White
+                span.review__stars ★★★★★
+              p.review__text
+                | “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                | Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                | Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                | Velit officia”
+
+  footer.footer
+    .container.footer__container
+      .footer__left
+        a.footer__logo(href="#")
+          img(src="img/svg/logo.svg" alt="Alowishus")
+        p.footer__text
+          | We made it our mission to create community everyday and grow meaningful,
+          | lasting relationships with our staff, our suppliers and of course you, our customers.
+
+      .footer__right
+        h3.footer__title Contact Alowishus!
+        ul.footer__contacts
+          li
+            span.footer__circle
+              img(src="img/svg/email.svg" alt="")
+            a.footer__contact(href="mailto:alowishus@gmail.com") alowishus@gmail.com
+          li
+            span.footer__circle
+              img(src="img/svg/phone.svg" alt="")
+            a.footer__contact(href="tel:+1102142142451") +110 214 214 2451
+
+        .footer__social
+          a.footer__circle(href="#")
+            img(src="img/svg/facebook.svg" alt="Facebook")
+          a.footer__circle(href="#")
+            img(src="img/svg/instagram.svg" alt="Instagram")
+          a.footer__circle(href="#")
+            img(src="img/svg/twitter.svg" alt="Twitter")
+          a.footer__circle(href="#")
+            img(src="img/svg/linkedin.svg" alt="LinkedIn")
+
+    .container.footer__bottom
+      p.footer__copy Copyright © 2022 Alowishus Delicious
+      .footer__links
+        a(href="#") Terms of Use
+        span |
+        a(href="#") Privacy Policy
