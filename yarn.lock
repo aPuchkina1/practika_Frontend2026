@@ -8326,6 +8326,7 @@ bem-tools-create@bem-tools/bem-tools-create:
     stylelint-config-standard-scss: "npm:^3.0.0"
     stylelint-order: "npm:^5.0.0"
     stylelint-selector-bem-pattern: "npm:^2.1.1"
+    swiper: "npm:^12.1.2"
     webpack: "npm:^5.70.0"
     webpack-stream: "npm:^7.0.0"
     yargs: "npm:^17.3.1"
@@ -15671,6 +15672,13 @@ bem-tools-create@bem-tools/bem-tools-create:
   bin:
     svgo: ./bin/svgo
   checksum: 10c0/261a82b08acf63accd7a54b47b4ffcd2fc7e7d7f8efef3cbc61184583b24b4c5434656004c30190302821af0f6d7b047eac730b0dcdab5d179e6a74383ccc776
+  languageName: node
+  linkType: hard
+
+"swiper@npm:^12.1.2":
+  version: 12.1.2
+  resolution: "swiper@npm:12.1.2"
+  checksum: 10c0/f2597a67c4d647e367a236735bb7779e2833346b332e6d7b8caf48c6b82da52787959e86f06762983ab82b142958690a0d1b9f6fc5a59170a648949b35cfedd0
   languageName: node
   linkType: hard
 

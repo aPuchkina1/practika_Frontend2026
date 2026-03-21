@@ -101,30 +101,55 @@ block content
           button.testimonials__arrow.testimonials__arrow--left(type="button" aria-label="Previous review")
             img(src="img/svg/arrow-left.svg" alt="")
 
-          .testimonials__grid
-            article.review
-              img.review__photo(src="img/review-1.png" alt="Customer photo")
-              .review__body
-                .review__head
-                  h3.review__name Brooklyn Simmons
-                  span.stars ★★★★★
-                p.review__text
-                  | “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                  | Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                  | Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                  | Velit officia”
+          .swiper.testimonials__swiper
+            .swiper-wrapper
+              .swiper-slide
+                article.review
+                  img.review__photo(src="img/review-1.png" alt="Customer photo")
+                  .review__body
+                    .review__head
+                      h3.review__name Brooklyn Simmons
+                      span.stars ★★★★★
+                    p.review__text
+                      | “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                      | Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                      | Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                      | Velit officia”
 
-            article.review
-              img.review__photo(src="img/review-2.png" alt="Customer photo")
-              .review__body
-                .review__head
-                  h3.review__name Imun White
-                  span.stars ★★★★★
-                p.review__text
-                  | “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                  | Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                  | Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                  | Velit officia”
+              .swiper-slide
+                article.review
+                  img.review__photo(src="img/review-2.png" alt="Customer photo")
+                  .review__body
+                    .review__head
+                      h3.review__name Imun White
+                      span.stars ★★★★★
+                    p.review__text
+                      | “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                      | Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                      | Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                      | Velit officia”
+
+              .swiper-slide
+                article.review
+                  img.review__photo(src="img/review-1.png" alt="Customer photo")
+                  .review__body
+                    .review__head
+                      h3.review__name John Carter
+                      span.stars ★★★★★
+                    p.review__text
+                      | “Great coffee and excellent service. I really liked the atmosphere
+                      | and the fast delivery. Definitely one of my favorite places.”
+
+              .swiper-slide
+                article.review
+                  img.review__photo(src="img/review-2.png" alt="Customer photo")
+                  .review__body
+                    .review__head
+                      h3.review__name Emma Watson
+                      span.stars ★★★★★
+                    p.review__text
+                      | “Very вкусный coffee, stylish place and friendly staff.
+                      | I will definitely come back again.”
 
           button.testimonials__arrow.testimonials__arrow--right(type="button" aria-label="Next review")
             img(src="img/svg/arrow-right.svg" alt="")
