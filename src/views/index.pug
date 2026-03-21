@@ -6,7 +6,7 @@ block variables
 
 block content
   header.header
-    .container.header__container
+    .header__container
       a.header__logo(href="#")
         img(src="img/svg/logo.svg" alt="Alowishus")
 
@@ -25,7 +25,7 @@ block content
 
   main
     section.hero
-      .hero__container
+      .container.hero__container
         .hero__content
           .hero__copy
             h1.hero__title
@@ -105,51 +105,55 @@ block content
             .swiper-wrapper
               .swiper-slide
                 article.review
-                  img.review__photo(src="img/review-1.png" alt="Customer photo")
-                  .review__body
-                    .review__head
-                      h3.review__name Brooklyn Simmons
-                      span.stars ★★★★★
-                    p.review__text
-                      | “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                      | Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                      | Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                      | Velit officia”
+                  .review__inner
+                    img.review__photo(src="img/review-1.png" alt="Customer photo")
+                    .review__body
+                      .review__head
+                        h3.review__name Brooklyn Simmons
+                        span.stars ★★★★★
+                      p.review__text
+                        | “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        | Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        | Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        | Velit officia”
 
               .swiper-slide
                 article.review
-                  img.review__photo(src="img/review-2.png" alt="Customer photo")
-                  .review__body
-                    .review__head
-                      h3.review__name Imun White
-                      span.stars ★★★★★
-                    p.review__text
-                      | “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                      | Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                      | Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                      | Velit officia”
+                  .review__inner
+                    img.review__photo(src="img/review-2.png" alt="Customer photo")
+                    .review__body
+                      .review__head
+                        h3.review__name Imun White
+                        span.stars ★★★★★
+                      p.review__text
+                        | “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        | Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        | Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        | Velit officia”
 
               .swiper-slide
                 article.review
-                  img.review__photo(src="img/review-1.png" alt="Customer photo")
-                  .review__body
-                    .review__head
-                      h3.review__name John Carter
-                      span.stars ★★★★★
-                    p.review__text
-                      | “Great coffee and excellent service. I really liked the atmosphere
-                      | and the fast delivery. Definitely one of my favorite places.”
+                  .review__inner
+                    img.review__photo(src="img/review-1.png" alt="Customer photo")
+                    .review__body
+                      .review__head
+                        h3.review__name John Carter
+                        span.stars ★★★★★
+                      p.review__text
+                        | “Great coffee and excellent service. I really liked the atmosphere
+                        | and the fast delivery. Definitely one of my favorite places.”
 
               .swiper-slide
                 article.review
-                  img.review__photo(src="img/review-2.png" alt="Customer photo")
-                  .review__body
-                    .review__head
-                      h3.review__name Emma Watson
-                      span.stars ★★★★★
-                    p.review__text
-                      | “Very вкусный coffee, stylish place and friendly staff.
-                      | I will definitely come back again.”
+                  .review__inner
+                    img.review__photo(src="img/review-2.png" alt="Customer photo")
+                    .review__body
+                      .review__head
+                        h3.review__name Emma Watson
+                        span.stars ★★★★★
+                      p.review__text
+                        | “Very вкусный coffee, stylish place and friendly staff.
+                        | I will definitely come back again.”
 
           button.testimonials__arrow.testimonials__arrow--right(type="button" aria-label="Next review")
             img(src="img/svg/arrow-right.svg" alt="")
@@ -205,12 +209,13 @@ block content
             button.btn.btn--dark.footer__btn SUBSCRIBE
 
       .footer__bottom
-        .footer__bottom-inner
-          p.footer__copy
-            | Copyright © 2022 
-            strong Alowishus Delicious
+        .footer__bottom-container
+          .footer__bottom-inner
+            p.footer__copy
+              | Copyright © 2022 
+              strong Alowishus Delicious
 
-          .footer__links
-            a(href="#") Terms of Use
-            span |
-            a(href="#") Privacy Policy
+            .footer__links
+              a(href="#") Terms of Use
+              span |
+              a(href="#") Privacy Policy

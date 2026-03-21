@@ -89,6 +89,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 24px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .header__right {
@@ -149,7 +151,6 @@
 .hero__container {
   position: relative;
   min-height: 712px;
-  padding: 0 100px;
 }
 
 .hero__content {
@@ -379,7 +380,7 @@
 
 .testimonials {
   background: var(--c-white);
-  padding: 40px 0 0;
+  padding: 0 0 70px;
 }
 
 .testimonials__header {
@@ -483,6 +484,15 @@
   flex-direction: column;
   box-shadow: 0 18px 40px rgba(0, 0, 0, .08);
   border-radius: 16px;
+  overflow: visible;
+  background: transparent;
+}
+
+.review__inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
   overflow: hidden;
   background: var(--c-white);
 }
@@ -532,7 +542,7 @@
 // Footer
 .footer {
   background: var(--c-white);
-  padding: 140px 0 60px;
+  padding: 70px 0 60px;
 }
 
 .footer__container {
@@ -705,17 +715,20 @@
 
 .footer__bottom {
   width: 100%;
-  max-width: 1240px;
-  margin: 80px auto 0;
-  padding-top: 40px;
-  border-top: 1px solid rgba(27, 27, 29, 0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-top: 80px;
+}
+
+.footer__bottom-container {
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .footer__bottom-inner {
   width: 100%;
+  padding-top: 40px;
+  border-top: 1px solid rgba(27, 27, 29, 0.1);
+
   display: flex;
   justify-content: space-between;
   align-items: center;
